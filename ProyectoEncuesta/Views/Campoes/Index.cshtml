@@ -1,0 +1,57 @@
+﻿@model IEnumerable<ProyectoEncuesta.Models.Campo>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Encuesta.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NombreCampo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TituloCampo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EsRequerido)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TipoCampo)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Encuesta.Nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NombreCampo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TituloCampo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EsRequerido)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TipoCampo)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.CampoID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.CampoID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.CampoID })
+        </td>
+    </tr>
+}
+
+</table>

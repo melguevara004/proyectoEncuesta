@@ -1,0 +1,42 @@
+﻿@model ProyectoEncuesta.Models.Encuesta
+
+@{
+    ViewBag.Title = "Generar";
+}
+
+<h2>Generar</h2>
+
+<div>
+    <h4>Encuesta</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descripcion)
+        </dd>
+
+        <dt>
+           link
+        </dt>
+
+        <dd>
+            <a href="/Respuestas/Index?id=@Model.ID&indice=0" role="button">/Respuestas/Index?id=@Model.ID&indice=0</a>
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,37 @@
+﻿@model ProyectoEncuesta.Models.RespVista
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Encuesta</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @ViewBag.Encuesta.Nombre
+        </dt>
+
+        <dd>
+            @ViewBag.Encuesta.Descripcion
+        </dd>
+    </dl>
+</div>
+
+
+        <div class="form-horizontal">
+            <div class="form-group">
+                <label for="DesRespuesta">@ViewBag.Campo.TituloCampo</label>
+                <input type="text"/>
+            </div>
+        </div>
+
+        <a href="/Respuestas/Index?id=@ViewBag.Encuesta.ID&indice=@ViewBag.Siguiente" role="button">Guardar</a>
+
+        
+            
+
+
+
