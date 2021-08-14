@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Login/_LayoutPage1.cshtml";
+}
+
+<div class="signinform">
+    <h1>Servicio de Encuestas</h1>
+    <!-- container -->
+    <div class="container">
+        <!-- main content -->
+        <div class="w3l-form-info">
+            <div class="w3_info">
+                <h2>Login</h2>
+                <form action="Verify" method="post">
+                    <div class="input-group">
+                        <span><i class="fas fa-user" aria-hidden="true"></i></span>
+                        <input type="text" name="usuario" placeholder="Usuario" required="">
+                    </div>
+                    <div class="input-group">
+                        <span><i class="fas fa-key" aria-hidden="true"></i></span>
+                        <input type="Password" name="contra"  placeholder="Contraseña" required="">
+                    </div>
+                    
+                    <button class="btn btn-primary btn-block" type="submit">Login</button>
+                </form>
+
+            </div>
+        </div>
+        <!-- //main content -->
+    </div>
+
+
+</div>
+
+
+<script src="js/fontawesome.js"></script>
+
+
+
+
+

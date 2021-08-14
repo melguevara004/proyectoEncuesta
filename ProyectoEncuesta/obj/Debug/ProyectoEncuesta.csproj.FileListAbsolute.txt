@@ -87,3 +87,4 @@ D:\Kate\ProyectoEncuesta\ProyectoEncuesta\obj\Debug\ProyectoEncuesta.csproj.Core
 D:\Kate\ProyectoEncuesta\ProyectoEncuesta\obj\Debug\ProyectoEncuesta.csproj.CopyComplete
 D:\Kate\ProyectoEncuesta\ProyectoEncuesta\obj\Debug\ProyectoEncuesta.dll
 D:\Kate\ProyectoEncuesta\ProyectoEncuesta\obj\Debug\ProyectoEncuesta.pdb
+D:\Kate\ProyectoEncuesta\ProyectoEncuesta\obj\Debug\ProyectoEncuesta.csprojAssemblyReference.cache
